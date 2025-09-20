@@ -1,5 +1,5 @@
 import {styles} from './util/style';
-import {Navbar, Home} from './components';
+import {Navbar, Home, Statistics} from './components';
 
 export default function App() {
     return (
@@ -13,6 +13,12 @@ export default function App() {
             <div className={`bg-primary ${styles.flexStart}`}>
                 <div className={`${styles.container}`}>
                     <Home/>
+                </div>
+            </div>
+
+            <div className={`bg-primary ${styles.flexStart}`}>
+                <div className={`${styles.container}`}>
+                    <Statistics/>
                 </div>
             </div>
         </div>
