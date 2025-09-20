@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+    /* === Colors === */
+    --color-primary: #052357;
+    --color-secondary: #6c757d;
+    --color-success: #198754;
+    --color-danger: #dc3545;
+    --color-warning: #ffc107;
+    --color-info: #0dcaf0;
+    --color-light: #f8f9fa;
+    --color-dark: #212529;
+
+    /* === Fonts === */
+    --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+    --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+
+    /* === Screens (breakpoints) === */
+    --breakpoint-sm: 640px;   /* mobile → tablet */
+    --breakpoint-md: 768px;   /* tablet → small laptop */
+    --breakpoint-lg: 1024px;  /* laptop → desktop */
+    --breakpoint-xl: 1280px;  /* large desktop */
+    --breakpoint-2xl: 1536px; /* very large screen */
+}
+
+.sidebar {
+    animation: slide-sidebar 0.5s cubic-bezier(0.645, 0.045, 0.45, 0.9) both;
+}
+
+@keyframes slide-sidebar {
+    0% {
+        transform: translateY(100px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.bg-black-gradient {
+    background: linear-gradient(to bottom, var(--color-primary), var(--color-secondary));
+}
